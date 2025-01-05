@@ -1,94 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>TechNova Consulting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 0.5rem 2rem;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 2rem;
+        }
+        .services, .about, .contact {
+            margin-top: 2rem;
+        }
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services li {
+            margin: 0.5rem 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
-
 <body>
     <header>
-        <div class="logo">
-            <h1><a href="index.html">ShopEasy</a></h1>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="cart-login">
-            <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
-            <a href="#" class="login">Login</a>
-        </div>
+        <h1>TechNova Consulting</h1>
+        <p>Your Partner in IT Solutions</p>
     </header>
-
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <section class="hero">
-        <div class="hero-content">
-            <h2>Welcome to ShopEasy</h2>
-            <p>Your one-stop online shop for all your needs!</p>
-            <a href="#products" class="btn">Shop Now</a>
-        </div>
+        <h2>Welcome to TechNova Consulting</h2>
+        <p>Empowering businesses with cutting-edge IT solutions, tailored to your needs.</p>
     </section>
-
-    <section id="products" class="products">
-        <h2>Our Products</h2>
-        <div class="product-list">
-            <div class="product-item">
-                <img src="images/product1.jpg" alt="Product 1">
-                <h3>Product 1</h3>
-                <p>$19.99</p>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
-            <div class="product-item">
-                <img src="images/product2.jpg" alt="Product 2">
-                <h3>Product 2</h3>
-                <p>$29.99</p>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
-            <div class="product-item">
-                <img src="images/product3.jpg" alt="Product 3">
-                <h3>Product 3</h3>
-                <p>$39.99</p>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
-        </div>
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Cloud Computing & Infrastructure</li>
+            <li>Custom Software Development</li>
+            <li>Data Analytics & Business Intelligence</li>
+            <li>Cybersecurity Solutions</li>
+            <li>IT Support & Managed Services</li>
+        </ul>
     </section>
-
-    <section id="about" class="about">
+    <section class="about" id="about">
         <h2>About Us</h2>
-        <p>ShopEasy is committed to providing the best online shopping experience. We offer a wide range of products at competitive prices.</p>
+        <p>At TechNova Consulting, we combine industry expertise with innovative technology to deliver transformative IT solutions. Our team of skilled professionals is dedicated to helping businesses stay ahead in a rapidly changing digital landscape.</p>
     </section>
-
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
         <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
+        <p>Have a question or need assistance? Reach out to us:</p>
+        <p>Email: info@technova.com</p>
+        <p>Phone: +1 (800) 555-1234</p>
+        <p>Address: 123 TechNova Lane, Innovation City, USA</p>
     </section>
-
     <footer>
-        <p>&copy; 2025 ShopEasy. All Rights Reserved.</p>
-        <div class="social-media">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+        <p>&copy; 2025 TechNova Consulting. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Careers</a>
         </div>
     </footer>
 </body>
-
 </html>
